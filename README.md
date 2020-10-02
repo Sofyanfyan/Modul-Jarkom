@@ -206,7 +206,8 @@ $ put [full path file]
 
 Saat hasil capture dilihat akan muncul data dibawah ini :
 
-![STOR](images/stor.JPGhttp.accept constains "text"`, berikut hasilnya :
+![STOR](images/stor.JPG)
+`http.accept constains "text"`, berikut hasilnya :
 [Gambar]()
 
 #### 2.4.3 Download File
