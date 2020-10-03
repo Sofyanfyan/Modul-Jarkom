@@ -38,14 +38,14 @@ Ada beberapa macam konfigurasi kabel. Dari urutan warnanya yang sesuai standar i
 
 Sedangkan dari pemasangannya dibagi menjadi
 #### b. __Kabel Straight-Through__
-  Jenis pengkabelan ini digunakan untuk menyambungkan dua perangkat yang berbeda. misalnya antara router dengan switch/hub, komputer ke switch dan komputer ke hub.
+  Jenis pengkabelan ini digunakan untuk menyambungkan dua tipe perangkat berbeda yang tersambung ke jaringan, yakni perangkat DTE (data terminal equipment) ke DCE (data circuit-terminating equipment) atau sebaliknya. Perangkat DTE adalah perangkat yang melakukan generate data digital dan bertindak sebagai source dan destination untuk data digital, contohnya adalah komputer, mikrokomputer, terminal, printer. DCE adalah perangkat yang menerima dan mengkonversi data ke link telekomunikasi yang sesuai, umumnya DCE adalah perangkat jaringan seperti router, switch, modem.
   
 ![Kabel Straight-Through](images/straight_through.png)
   
   Aturan pemasangannya adalah bahwa tiap ujung kabel harus memiliki urutan warna yang sama. Misal ujung yang satu menggunakan susunan warna berdasarkan aturan T568A maka begitu juga ujung lainnya.
 
 #### b. __Kabel Crossover__
-Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk menyambungkan dua perangkat yang sama. Misalnya antara komputer dengan komputer, router dengan router, switch dengan switch, hub dengan hub.
+Berkebalikan dengan kabel Straight-through, pengkabelan ini digunakan untuk menyambungkan dua tipe perangkat yang sama yang tersambung ke jaringan, yakni perangkat DTE ke DTE atau DCE ke DCE. Misalnya antara komputer dengan komputer, router dengan router, router dengan switch, komputer dengan printer.
   
   ![Kabel Crossover](images/crossover.png)
   
@@ -171,7 +171,26 @@ Dalam Wireshark terdapat 2 jenis filter yaitu ***Capture Filter*** dan ***Displa
 Jalankan aplikasi wireshark sebelum *connect* ke server FTP yang dituju.
 #### 2.4.1 Connect ke Server
 ##### a. Windows
-Untuk pengguna windows kita akan menggunakan bantuan **FileZilla**. Buka FileZilla dan masukkan *Host*, *Username*, *Password*, dan *Port* dari server yang akan disambungkan. Bila sudah yakin, klik *Quickconnect* untuk menyambungkan.
+Untuk pengguna windows kita akan menggunakan bantuan **FileZilla**. Untuk percobaan di server, di sini menggunakan Filezilla Server dan untuk client menggunakan Filezilla Client. Nantinya server dan clientnya bisa komputer yang sama atau berbeda (asal terhubung ke jaringan komputer). 
+
+###### Pembuatan Server FTP di Filezilla Server
+1. Buka Filezilla Server (bisa melalui aplikasi Filezilla Server desktop atau XAMPP dengan start module Filezilla dan klik tombol Admin). Jika muncul pop up "Connect to Server" langsung saja klik Ok. Muncul tampilan berikut.
+
+![Home FileZilla Server](images/fz_server_home.png)
+
+2. Klik menu Edit->Users. Di kolom Users paling kanan, tambahkan user baru dengan cara klik Add dan isikan nama user FTP nya. Berikut hasil setelah menambah user (di sini ditambah user "coba"). Jika ingin menggunakan password, centang "Password" dan masukkan password yang diinginkan.
+
+![Add User FileZilla Server](images/fz_server_add_user.png)
+
+3. Setelah user terbuat, berikutnya masuk ke setting shared folder untuk menentukan folder yang akan dishare atau diremote dengan FTP. Pada kolom Users, pilih user, dan pada kolom Shared folders, klik tombol "Add" untuk menambah direktori. Berikutnya bisa diatur akses yang akan dimiliki oleh user tersebut terhadap shared folder yang dipilih pada kotak-kotak centang pada kolom Files dan Directories.
+
+![Add Shared Folder FileZilla Server](images/fz_server_add_shared_folder.png)
+
+Server untuk FTP berhasil dibuat.
+
+###### Koneksi dari Filezilla Client
+
+Buka FileZilla dan masukkan *Host*, *Username*, *Password*, dan *Port* dari server yang akan disambungkan. Bila sudah yakin, klik *Quickconnect* untuk menyambungkan.
 
 ![Login FileZilla](images/filezilla_connect.JPG)
 
@@ -246,3 +265,5 @@ Saat hasil capture dilihat akan muncul data dibawah ini :
 + https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html
 + https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 + https://computer.howstuffworks.com/question5251.htm]
++ https://www.comparitech.com/net-admin/difference-between-straight-through-crossover-rollover-cables/
++ https://www.indowebsite.co.id/kb/cara-mengaktifkan-ftp-pada-localhost-atau-xammp/
