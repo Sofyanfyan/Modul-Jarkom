@@ -9,6 +9,7 @@
 	+ 2.1 [Instalasi](#21-instalasi)
 	+ 2.2 [Filters](#22-filters)
 	+ 2.3 [Export data hasil packet capture](#23-export-data-hasil-paket-capture)
+	+ 2.4 [Penggunaan Wireshark pada FTP Server](#24-penggunaan-wireshark-pada-ftp-server)
 
 ## 1. Wire Crimping
 Dalam jaringan komputer, terjadi komunikasi antara satu perangkat dengan perangkat lainnya. Komunikasi itu tentu membutuhkan suatu media. Walaupun sudah ada teknologi komunikasi nirkabel, peran kabel dalam jaringan masih penting dan belum tergantikan. Oleh karena itu dalam modul kali ini, kita akan belajar cara melakukan _crimping_ pada salah satu jenis kabel jaringan yang bernama kabel UTP (_Unshielded Twisted Pair_).
@@ -225,8 +226,6 @@ $ put [full path file]
 Saat hasil capture dilihat akan muncul data dibawah ini :
 
 ![STOR](images/stor.JPG)
-`http.accept constains "text"`, berikut hasilnya :
-[Gambar]()
 
 #### 2.4.4 Download File
 ##### a. Menggunakan Filezilla client
