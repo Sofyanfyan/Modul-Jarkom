@@ -188,13 +188,14 @@ Untuk pengguna windows kita akan menggunakan bantuan **FileZilla**. Untuk percob
 
 Server untuk FTP berhasil dibuat.
 
-###### Koneksi dari Filezilla Client
+#### 2.4.2 Koneksi dari Client
 
+##### a. Menggunakan Filezilla client
 Buka FileZilla dan masukkan *Host*, *Username*, *Password*, dan *Port* dari server yang akan disambungkan. Bila sudah yakin, klik *Quickconnect* untuk menyambungkan.
 
 ![Login FileZilla](images/filezilla_connect.JPG)
 
-##### b. Linux
+##### b. Menggunakan command Linux
 `$ ftp [Host ip]`
 Masukkan username dan password, kemudian jalankan seperti CLI
 
@@ -207,17 +208,15 @@ Saat hasil capture dari Wireshark dilihat, akan muncul data di bawah ini:
 | USER | Username yang digunakan untuk login ke FTP server |
 | PWD | Password yang digunakan untuk login ke FTP server |)
 
-### 2.3 
-
-#### 2.4.2 Upload File
-##### a. Windows
+#### 2.4.3 Upload File
+##### a. Menggunakan Filezilla client
 Untuk FileZilla drag file dari Local site lalu drop di Remote site
 
 | Perintah | Keterangan |
 |---|---|
 | STOR | Meng-upload file ke FTP server |
 
-##### b. Linux
+##### b. Menggunakan command Linux
 Command upload untuk linux
 ```
 $ put [full path file]
@@ -229,15 +228,15 @@ Saat hasil capture dilihat akan muncul data dibawah ini :
 `http.accept constains "text"`, berikut hasilnya :
 [Gambar]()
 
-#### 2.4.3 Download File
-##### a. Windows
+#### 2.4.4 Download File
+##### a. Menggunakan Filezilla client
 Untuk Filezilla drag file dari Remote site ke Local site
 
 | Perintah | Keterangan |
 |---|---|
 | RETR | Men-download suatu file dari FTP server |
 
-##### b. Linux
+##### b. Menggunakan command Linux
 Command download untuk linux
 ```
 $ get [nama file]
