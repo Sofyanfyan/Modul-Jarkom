@@ -142,7 +142,7 @@ Dalam Wireshark terdapat 2 jenis filter yaitu ***Capture Filter*** dan ***Displa
 | Logical Operator | Keterangan |
 |---|---|
 | `and` atau `&&` | logical AND |
-| `or` atau `||` | logical OR |
+| `or` | logical OR |
 | `xor` atau `^^` | logical XOR |
 | `not` atau `!` | logical NOT |
 | `[...]` | substring operator |
