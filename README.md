@@ -215,6 +215,9 @@ Lalu ketikka `sysctl -p` untuk mengaktifkan perubahan yang ada. Dengan mengaktif
 
 **SURABAYA (Sebagai Router)**
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
 address 'IP_eth0_SURABAYA_tiap_kelompok'
@@ -234,6 +237,9 @@ netmask 255.255.255.0
 
 **MALANG (Sebagai DNS Server)**
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
 address 'IP_MALANG_tiap_kelompok'
@@ -243,6 +249,9 @@ gateway 'IP_eth1_SURABAYA_tiap_kelompok'
 
 **MOJOKERTO (Sebagai Web Server)**
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
 address 'IP_MOJOKERTO_tiap_kelompok'
@@ -252,6 +261,9 @@ gateway 'IP_eth1_SURABAYA_tiap_kelompok'
 
 **SIDOARJO (Sebagai Klien)**
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
 address 192.168.0.2
@@ -261,6 +273,9 @@ gateway 192.168.0.1
 
 **GRESIK (Sebagai Klien)**
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
 address 192.168.0.3
