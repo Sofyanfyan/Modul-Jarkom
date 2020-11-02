@@ -493,11 +493,13 @@ Sedangkan saat pengguna  memiliki __IP NID 10.151.252.0/22__ maka halaman yang m
 
 ## I. Latihan
 <!-- #### TBA -->
-1. Download halaman jatim di testing.mekanis.me/jatim.zip
+1. Download halaman jatim di 10.151.36.202/jatim.zip
 2. Buat domain baru dengan nama __jatim.yyy.id__ untuk membuka halaman tersebut.
 3. Atur agar jika kalian mengetikkan __jatim.yyy.id__, Web jatim dapat terbuka. 
 ### Catatan
-+ Untuk download halaman web, gunakan perintah `wget testing.mekanis.me/jatim.zip`
++ Untuk download halaman web, gunakan perintah `wget 10.151.36.202/jatim.zip`
++ Kemudian unzip file tersebut. Jika muncul error seperti `unzip: command not found` maka install unzip terlebih dahulu menggunakan command `apt-get install unzip`.
++ Buat directory hasil unzip file tersebut menjadi _DocumentRoot_ web
 + Untuk nomor 2 dan 3, '__yyy__' diisi dengan nama kelompok. Contoh: __jatim.a04.id__
 
 
