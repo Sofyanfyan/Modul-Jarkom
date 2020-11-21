@@ -346,7 +346,7 @@ Jika **GRESIK** dan **SIDOARJO** berganti alamat IP sesuai dengan range yang tel
 
 ## Soal Latihan
 
-1. Buatlah konfigurasi DHCP agar GRESIK dan SIDOARJO mendapatkan IP dengan range 192.168.0.1 - 192.168.0.10 dan 192.168.0.12 - 192.168.0.16 dengan syarat:
+1. Buatlah konfigurasi DHCP agar GRESIK dan SIDOARJO mendapatkan IP dengan range 192.168.0.2 - 192.168.0.10 dan 192.168.0.12 - 192.168.0.16 dengan syarat:
 Setiap 1 menit ip yg digunakan client berubah dan juga dns diarahkan ke dns server kalian sendiri tetapi tetap bisa digunakan untuk mengakses internet.
 
 ## Referensi
