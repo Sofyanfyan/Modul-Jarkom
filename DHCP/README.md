@@ -351,7 +351,5 @@ Setiap 1 menit ip yg digunakan client berubah dan juga dns diarahkan ke dns serv
 
 ## Referensi
 
-- **Manual ISC DHCP** : [https://www.isc.org/wp-content/uploads/2018/10/dhcpd44.html](https://www.isc.org/wp-content/uploads/2018/10/dhcpd44.html)
-- [https://www.nada.kth.se/kurser/kth/2D1392/05/lectures/lecture_9.pdf](https://www.nada.kth.se/kurser/kth/2D1392/05/lectures/lecture_9.pdf)
 - [http://www.tcpipguide.com/free/t_DHCPGeneralOperationandClientFiniteStateMachine.htm](http://www.tcpipguide.com/free/t_DHCPGeneralOperationandClientFiniteStateMachine.htm)
 
