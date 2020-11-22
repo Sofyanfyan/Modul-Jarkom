@@ -350,6 +350,6 @@ Jika **GRESIK** dan **SIDOARJO** berganti alamat IP sesuai dengan range yang tel
 Setiap 1 menit ip yg digunakan client berubah dan juga dns diarahkan ke dns server kalian sendiri tetapi tetap bisa digunakan untuk mengakses internet.
 
 ## Referensi
-
+- [https://www.isc.org/dhcp/](https://www.isc.org/dhcp/)
 - [http://www.tcpipguide.com/free/t_DHCPGeneralOperationandClientFiniteStateMachine.htm](http://www.tcpipguide.com/free/t_DHCPGeneralOperationandClientFiniteStateMachine.htm)
 
